@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NeuSolv | Productos</title>
+    <link rel="icon" type="image/png" href="../imagen/favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header class="header-principal">
+        <img src="../imagen/logo.jpg" alt="" class="logo" />
+         <nav class="menu">
+      <a href="index.html" id="inicio">Inicio</a>
+      <div class="dropdown">
+        <a href="#" id="proyecto1">Proyecto</a>
+        <div class="submenu">
+          <a href="justificacion.html" id="justificacion">Justificación</a>
+          <a href="analisis.html" id="analisis">Análisis</a>
+          <a href="modelo.html" id="modelo">Modelo de Negocios</a>
+        </div>
+      </div>
+      <a href="servicios.html" id="productos">Productos</a>
+      <a href="contacto.html" id="contactos">Contacto</a>
+            <!-- cambiar de idioma -->
+            <a><button onclick="cambiarIdioma()" id="button" class="bot">Traducir</button> </a>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <div class="galeria" id="galeria">
+            <img src="../imagen/WhatsApp Image 2025-08-19 at 4.04.33 PM (1).jpeg" class="imagen"  >
+            <img src="../imagen/WhatsApp Image 2025-08-19 at 4.04.33 PM.jpeg" class="imagen">
+            <img src="../imagen/WhatsApp Image 2025-08-19 at 4.04.34 PM (1).jpeg" class="imagen">
+            <img src="../imagen/WhatsApp Image 2025-08-19 at 4.04.34 PM (2).jpeg" class="imagen">
+            <img src="../imagen/WhatsApp Image 2025-08-19 at 4.04.34 PM (3).jpeg" class="imagen">
+            <img src="../imagen/WhatsApp Image 2025-08-19 at 4.04.34 PM.jpeg" class="imagen">
+        </div>
+    </section>
+
+    <script>
+        let idioma = "es";
+
+    function cambiarIdioma() {
+      if (idioma === "es") {
+        document.getElementById("button").textContent = "Translate";
+        document.getElementById("inicio").textContent = "Home";
+        document.getElementById("proyecto1").textContent = "Proyect";
+        document.getElementById("modelo").textContent = "Business model";
+        document.getElementById("productos").textContent = "Products";
+        document.getElementById("contactos").textContent = "Contacts";
+        document.getElementById("analisis").textContent = "Analysis";
+        document.getElementById("justificacion").textContent = "Justification";
+
+        idioma = "en";
+      } else {
+        document.getElementById("button").textContent = "Traducir";
+        document.getElementById("inicio").textContent = "Inicio";
+        document.getElementById("proyecto1").textContent = "Proyecto"
+        document.getElementById("modelo").textContent = "Modelo de negocios";
+        document.getElementById("productos").textContent = "Productos"
+        document.getElementById("contactos").textContent = "Contactos";
+        document.getElementById("analisis").textContent = "Analysis";
+        document.getElementById("justificacion").textContent = "Justificacion";
+        idioma = "es";
+      }
+    }
+    </script>
+
+</body>
+</html>
