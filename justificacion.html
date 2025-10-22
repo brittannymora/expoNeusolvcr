@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NeuSolv | Nosotros</title>
+    <link rel="icon" type="image/png" href="../imagen/favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <!-- las opciones de navegación de la pagina -->
+    <header class="header-principal">
+        <img src="../imagen/logo.jpg" alt="" class="logo" />
+       <nav class="menu">
+      <a href="index.html" id="inicio">Inicio</a>
+      <div class="dropdown">
+        <a href="#" id="proyecto1">Proyecto</a>
+        <div class="submenu">
+          <a href="justificacion.html" id="justificacion">Justificación</a>
+          <a href="analisis.html" id="analisis">Análisis</a>
+          <a href="modelo.html" id="modelo">Modelo de Negocios</a>
+        </div>
+      </div>
+      <a href="servicios.html" id="productos">Productos</a>
+      <a href="contacto.html" id="contactos">Contacto</a>
+            <!-- cambiar de idioma -->
+            <a><button onclick="cambiarIdioma()" id="button" class="bot">Traducir</button> </a>
+        </nav>
+    </header>
+    <!-- contenido de la pagina -->
+    <section class="contenido">
+        <h2 id="titulo" style="text-align: center;">Justificación</h2>
+        <h2 id="titulo">Problemática</h2>
+        <p class="caja sombra" id="descripcion">
+        El proyecto Jabón lavaplatos NeuSolv es un buen negocio gracias a todas las ventajas que trae a sus compradores y problemáticas que el jabón puede resolver. Estos últimos años se ha venido dando un preocupante aumento en las personas que sufren reacciones alérgicas a productos muy cargados de químicos, de hecho, existe un término que se está haciendo popular y es el conocido como dermatitis de contacto o atópica, la cual refiere a “una afección en la que la piel que se irrita e inflama por el contacto directo con una sustancia que contiene un irritante o alérgeno. La dermatitis de contacto puede aparecer rápidamente o desarrollarse lentamente. Existen dos tipos de dermatitis de contacto: la dermatitis irritante y la dermatitis alérgica” (Brown, 2022, párr. 3)
+        Si cualquier consumidor se detiene a observar los materiales con los que se fabrican los jabones lavaplatos convencionales, se topará primero que todo con incertidumbre, porque a menos de que sean conocedores de compuestos químicos, para la gran mayoría de la población, lo que puede leer no va a ser tan sencillo de interpretar, pero para hacer un pequeño resumen de los principales compuestos que generan estas afecciones se puede citar
+        	Fragancias, que a menudo están compuestas de una mezcla de sustancias químicas. 
+        	Lauril sulfato de sodio (SLS), que es una sustancia química que hace que el jabón sea burbujeante y espumoso.
+        	Triclosán, que puede encontrarse en jabones antibacterianos para platos. (Brown, 2022, párr. 12)
+        El principal problema es que los productos que contienen estos elementos son de los más comerciales o los que los compradores toman como primera opción ya que estos dañinos productos son los más comunes en ventas, por eso, decidimos tomar en cuenta dicho problema. Se entiende que muchas familias, en su planificación de gastos, suele buscar productos genéricos que tienden a ser más cómodos para sus bolsillos. 
+        “La sensibilidad a productos químicos y reacciones en la piel pueden afectar a la vida de las personas. Los detergentes, los suavizantes y muchos de los productos químicos que utilizamos en la limpieza del hogar pueden tener unos efectos sobre nuestra piel.”  Si se analiza detenidamente, pagar menos por un producto que genera incomodidad, picazón, ardor, posibles erupciones por rascarse o por la incomodidad, rápidamente se puede considerar que la opción de estos productos no siempre puede ser la mejor. Si fuese una reacción pasajera, quizá no tendría tanto impacto, pero debemos de analizar que, las personas que viven con este tipo de incomodidades, sufren un cambio significativo en la forma en la que realizan sus tareas cotidianas. (Laundrypro, SF. párr. 1)
+        En la institución existe el caso de una cocinera que ha sido reubicada porque la exposición a este de jabones le generó un mal mayor, debido a que siguió utilizando esta clases de productos, hasta una situación insostenible, teniendo que cambiar completamente su rutina de hábitos, empezar a utilizar guantes que le protejan y posterior a citas dermatológicas,  recibir la recomendación de orientar sus tareas, en el campo personal y profesional a nuevas actividades que le impidieran el contacto con este tipo de productos.
+        Tener que cambiar drásticamente lo que se realiza, no es cómodo para nadie, solemos pensar que se podría adaptar fácilmente, pero sentir incomodidad, hasta por lavarse las manos, ver como parte de piel, específicamente de las manos, se irrita de la forma que se hace, entorpece tareas sencillas, de verdad que se vuelve negativo. “El cuerpo y la mente mantienen una conexión intrínseca que se refleja en diversos signos visibles y emocionales. En ese sentido, la relación entre la piel y la salud mental resulta sorprendente y profunda, ya que una repercute directamente en la otra.”.  Además, desde puntos de vista psicológicos, estas molestias pueden desencadenar más problemas, como lo pueden ser depresión, estrés, ansiedad, entre otros padecimientos mentales. (Fermín Filloy. 2024, párr. 2)
+        </p>
+
+        <h2 id="titulo">Oportunidad</h2>
+        <p class="caja sombra" id="descripcion2">
+        NeuSolv, es un jabón lavaplatos fuera de lo común, un producto innovador, que no solo cumple con las funciones básicas que se necesitan en la cocina, así como lo es la limpieza de utensilios de cocina, superficies sucias de distintas partes de la cocina o casa, y otros artefactos que necesiten ser liberados de suciedad.  Aparte de ser un excelente removedor de grasa y suciedad en platos, vasos, ollas, superficies, y demás, es un jabón amigable con la piel, es un jabón lavaplatos neutro que ayudará a personas que sufren de brotes, alergias, enfermedades y demás, a llevar estos problemas en su piel de una manera más cómoda y segura. Además, el jabón neutro también protege los utensilios de cocina. No desgasta materiales delicados como lo es el vidrio o el teflón, y es muy seguro para lavar los trastes de bebés, ya que no contamina ni deja residuos que puedan afectar su salud. 
+        </p>
+    </section>
+
+    <script>
+        let idioma = "es";
+
+    function cambiarIdioma() {
+      if (idioma === "es") {
+        document.getElementById("button").textContent = "Translate";
+        document.getElementById("inicio").textContent = "Home";
+        document.getElementById("proyecto1").textContent = "Proyect";
+        document.getElementById("modelo").textContent = "Business model";
+        document.getElementById("productos").textContent = "Products";
+        document.getElementById("contactos").textContent = "Contacts";
+        document.getElementById("analisis").textContent = "Analysis";
+        document.getElementById("justificacion").textContent = "Justification";
+        document.getElementById("descripcion").innerHTML = `The NeuSolv dish soap project is a good business thanks to all the advantages it brings to its buyers and the problems that the soap can solve. In recent years, there has been a concerning increase in people who suffer allergic reactions to products heavily loaded with chemicals. In fact, there is a term that is becoming popular, known as contact or atopic dermatitis, which refers to “a condition in which the skin becomes irritated and inflamed by direct contact with a substance containing an irritant or allergen. Contact dermatitis can appear quickly or develop slowly. There are two types of contact dermatitis: irritant dermatitis and allergic dermatitis” (Brown, 2022, para. 3).
+      If any consumer takes a moment to look at the materials with which conventional dish soaps are made, they will first encounter uncertainty, because unless they are knowledgeable about chemical compounds, for the vast majority of the population, what they can read will not be easy to interpret. However, to summarize some of the main compounds that cause these conditions, we can cite:
+      * Fragrances, which are often made up of a mixture of chemicals.
+      * Sodium Lauryl Sulfate (SLS), a chemical that makes soap bubbly and foamy.
+      * Triclosan, which can be found in antibacterial dish soaps. (Brown, 2022, para. 12)
+      The main problem is that the products containing these elements are among the most commercialized or those that buyers take as their first option, since these harmful products are the most common on the market. That is why we decided to take this problem into account. It is understood that many families, in their expense planning, often look for generic products that tend to be more affordable.
+      “Chemical sensitivity and skin reactions can affect people’s lives. Detergents, fabric softeners, and many of the chemicals we use in household cleaning can have effects on our skin.” If carefully analyzed, paying less for a product that generates discomfort, itching, burning, or possible rashes due to scratching or irritation, one can quickly conclude that these products are not always the best option. If it were a temporary reaction, it might not have such an impact, but we must analyze that people who live with these types of discomforts suffer a significant change in the way they carry out their daily tasks. (Laundrypro, n.d., para. 1)
+      At the institution, there is the case of a cook who was reassigned because exposure to these soaps caused a serious condition. By continuing to use these types of products, her situation became unsustainable, forcing her to completely change her routine, start using protective gloves, and after several dermatology appointments, receive the recommendation to redirect both her personal and professional activities to new tasks that prevented contact with these products.
+      Having to drastically change one’s activities is not comfortable for anyone. We tend to think one could adapt easily, but feeling discomfort even when washing one’s hands, and seeing the skin—specifically on the hands—irritated in such a way, hinders simple tasks and truly becomes negative. “The body and mind maintain an intrinsic connection that is reflected in various visible and emotional signs. In this sense, the relationship between the skin and mental health is surprisingly deep, since one directly affects the other.” Moreover, from a psychological standpoint, these discomforts can trigger further problems, such as depression, stress, anxiety, among other mental conditions. (Fermín Filloy, 2024, para. 2)
+      `
+      document.getElementById("descripcion2").innerHTML = ` NeuSolv is a dish soap out of the ordinary—an innovative product that not only fulfills the basic functions needed in the kitchen, such as cleaning cookware, dirty surfaces in different areas of the kitchen or home, and other items that need to be freed from dirt. In addition to being an excellent remover of grease and grime on plates, glasses, pots, surfaces, and more, it is also skin-friendly. NeuSolv is a neutral dish soap that will help people who suffer from breakouts, allergies, skin conditions, and other issues to manage them in a more comfortable and safe way. Furthermore, neutral soap also protects kitchen utensils. It does not wear down delicate materials such as glass or Teflon, and it is very safe for washing baby dishes, since it does not contaminate or leave residues that could affect their health.`
+
+        idioma = "en";
+      } else {
+        document.getElementById("button").textContent = "Traducir";
+        document.getElementById("inicio").textContent = "Inicio";
+        document.getElementById("proyecto1").textContent = "Proyecto"
+        document.getElementById("modelo").textContent = "Modelo de negocios";
+        document.getElementById("productos").textContent = "Productos"
+        document.getElementById("contactos").textContent = "Contactos";
+        document.getElementById("analisis").textContent = "Analisis";
+        document.getElementById("justificacion").textContent = "Justificacion";
+        document.getElementById("descripcion").innerHTML = ` El proyecto Jabón lavaplatos NeuSolv es un buen negocio gracias a todas las ventajas que trae a sus compradores y problemáticas que el jabón puede resolver. Estos últimos años se ha venido dando un preocupante aumento en las personas que sufren reacciones alérgicas a productos muy cargados de químicos, de hecho, existe un término que se está haciendo popular y es el conocido como dermatitis de contacto o atópica, la cual refiere a “una afección en la que la piel que se irrita e inflama por el contacto directo con una sustancia que contiene un irritante o alérgeno. La dermatitis de contacto puede aparecer rápidamente o desarrollarse lentamente. Existen dos tipos de dermatitis de contacto: la dermatitis irritante y la dermatitis alérgica” (Brown, 2022, párr. 3)
+        Si cualquier consumidor se detiene a observar los materiales con los que se fabrican los jabones lavaplatos convencionales, se topará primero que todo con incertidumbre, porque a menos de que sean conocedores de compuestos químicos, para la gran mayoría de la población, lo que puede leer no va a ser tan sencillo de interpretar, pero para hacer un pequeño resumen de los principales compuestos que generan estas afecciones se puede citar
+        	Fragancias, que a menudo están compuestas de una mezcla de sustancias químicas. 
+        	Lauril sulfato de sodio (SLS), que es una sustancia química que hace que el jabón sea burbujeante y espumoso.
+        	Triclosán, que puede encontrarse en jabones antibacterianos para platos. (Brown, 2022, párr. 12)
+        El principal problema es que los productos que contienen estos elementos son de los más comerciales o los que los compradores toman como primera opción ya que estos dañinos productos son los más comunes en ventas, por eso, decidimos tomar en cuenta dicho problema. Se entiende que muchas familias, en su planificación de gastos, suele buscar productos genéricos que tienden a ser más cómodos para sus bolsillos. 
+        “La sensibilidad a productos químicos y reacciones en la piel pueden afectar a la vida de las personas. Los detergentes, los suavizantes y muchos de los productos químicos que utilizamos en la limpieza del hogar pueden tener unos efectos sobre nuestra piel.”  Si se analiza detenidamente, pagar menos por un producto que genera incomodidad, picazón, ardor, posibles erupciones por rascarse o por la incomodidad, rápidamente se puede considerar que la opción de estos productos no siempre puede ser la mejor. Si fuese una reacción pasajera, quizá no tendría tanto impacto, pero debemos de analizar que, las personas que viven con este tipo de incomodidades, sufren un cambio significativo en la forma en la que realizan sus tareas cotidianas. (Laundrypro, SF. párr. 1)
+        En la institución existe el caso de una cocinera que ha sido reubicada porque la exposición a este de jabones le generó un mal mayor, debido a que siguió utilizando esta clases de productos, hasta una situación insostenible, teniendo que cambiar completamente su rutina de hábitos, empezar a utilizar guantes que le protejan y posterior a citas dermatológicas,  recibir la recomendación de orientar sus tareas, en el campo personal y profesional a nuevas actividades que le impidieran el contacto con este tipo de productos.
+        Tener que cambiar drásticamente lo que se realiza, no es cómodo para nadie, solemos pensar que se podría adaptar fácilmente, pero sentir incomodidad, hasta por lavarse las manos, ver como parte de piel, específicamente de las manos, se irrita de la forma que se hace, entorpece tareas sencillas, de verdad que se vuelve negativo. “El cuerpo y la mente mantienen una conexión intrínseca que se refleja en diversos signos visibles y emocionales. En ese sentido, la relación entre la piel y la salud mental resulta sorprendente y profunda, ya que una repercute directamente en la otra.”.  Además, desde puntos de vista psicológicos, estas molestias pueden desencadenar más problemas, como lo pueden ser depresión, estrés, ansiedad, entre otros padecimientos mentales. (Fermín Filloy. 2024, párr. 2)
+        `
+        document.getElementById("descripcion2").innerHTML = `NeuSolv, es un jabón lavaplatos fuera de lo común, un producto innovador, que no solo cumple con las funciones básicas que se necesitan en la cocina, así como lo es la limpieza de utensilios de cocina, superficies sucias de distintas partes de la cocina o casa, y otros artefactos que necesiten ser liberados de suciedad.  Aparte de ser un excelente removedor de grasa y suciedad en platos, vasos, ollas, superficies, y demás, es un jabón amigable con la piel, es un jabón lavaplatos neutro que ayudará a personas que sufren de brotes, alergias, enfermedades y demás, a llevar estos problemas en su piel de una manera más cómoda y segura. Además, el jabón neutro también protege los utensilios de cocina. No desgasta materiales delicados como lo es el vidrio o el teflón, y es muy seguro para lavar los trastes de bebés, ya que no contamina ni deja residuos que puedan afectar su salud. `
+        idioma = "es";
+      }
+    }
+    </script>
+</body>
+</html>
