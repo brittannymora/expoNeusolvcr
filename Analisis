@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NeuSolv | Nosotros</title>
+    <link rel="icon" type="image/png" href="../imagen/favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <!-- las opciones de navegación de la pagina -->
+    <header class="header-principal">
+        <img src="../imagen/logo.jpg" alt="" class="logo" />
+         <nav class="menu">
+      <a href="index.html" id="inicio">Inicio</a>
+      <div class="dropdown">
+        <a href="#" id="proyecto1">Proyecto</a>
+        <div class="submenu">
+          <a href="justificacion.html" id="justificacion">Justificación</a>
+          <a href="analisis.html" id="analisis">Análisis</a>
+          <a href="modelo.html" id="modelo">Modelo de Negocios</a>
+        </div>
+      </div>
+      <a href="servicios.html" id="productos">Productos</a>
+      <a href="contacto.html" id="contactos">Contacto</a>
+      <!-- cambiar de idioma -->
+      <a><button onclick="cambiarIdiomaAnalisis()" id="button" class="bot">Traducir</button></a>
+    </nav>
+    </header>
+    <!-- contenido de la pagina -->
+    <section class="contenido">
+        <h2 id="titulo" style="text-align: center;">Análisis del contexto Social, Económico, Tecnológico y Medioambiental del producto</h2>
+        <p class="caja sombra" id="descripcion">
+            En la parte social, NeuSolv busca ofrecer a las personas un jabón lavaplatos neutro que sea tanto útil en las labores domésticas, como en el cuido de la salud, busca que los consumidores puedan acceder al producto y aprovechar de beneficios, como más seguridad de evitar reacciones alérgicas al usar el producto, a desarrollar enfermedades atópicas en la piel, como la dermatitis, o terminar dañando los utensilios
+            <br><br>Por el lado económico podemos encontrar que es un producto que busca beneficiar a las personas y ser una alternativa más segura para ellos y para sus seres queridos. 
+            <br><br> El lavaplatos NeuSolv busca ser accesible a todo tipo de clase económica, para que todas las personas puedan aprovechar sus increíbles ventajas. Gracias a su fórmula generada con productos de bajo costo, el Jabón lavaplatos NeuSolv no termina siendo un producto de costo muy elevado.
+            <br><br>En el lado ambiental, el producto cuenta con un empacado de material reciclable, lo que lo hace una opción de producto menos contaminante para el medio ambiente. Este empaque transforma al jabón lavaplatos NeuSolv en un producto eco-amigable, capaz de atraer a consumidores interesados en prácticas sostenibles y aumentar las ventas gracias a su compromiso ecológico e incluso colabora a concientizar las practicas hacía el cuido y mejoramiento del planeta.
+            <br><br>“El impacto ambiental de la contaminación por productos químicos puede ser significativo, afectando la calidad del aire, el agua y el suelo.”  Por esto el jabón lavaplatos NeuSolv busca mantener una fórmula que promueva el cuido del medio, al no contener componentes químicos agresivos, ayuda a reducir gran cantidad de la contaminación ambiental que se produce por desechos de productos, apoyando cada esfuerzo que como humanos consientes promueve para cuidar del mundo. (Pérez, 2023, párr. 2).
+            <br><br>El jabón lavaplatos NeuSolv es un producto con ventaja comercial, ya que la tendencia del cuido de la piel, salud, calidad de vida y demás va aumentando todos los días, haciendo que los compradores se den cuenta de lo importante que es saber elegir un producto de buena calidad, ya que están haciendo un bien a sigo mismos,  por elegir un producto que no solo es útil en labores domésticas, también es muy bueno para cuidar la salud de su piel, evitando molestares al realizar la limpieza en su cocina. NeuSolv es la alternativa ecológica y saludable para implementar el cuido de la piel en la cocina. 
+            <br><br>Día con día se trabaja en el mejoramiento de la formula del jabón lavaplatos NeuSolv, busca brindar una mejor calidad de vida en la cocina de sus hogares, trabajos emprendimientos y más. NeuSolv promete ser el jabón lavaplatos del futuro, brindando calidad y seguridad a sus consumidores 
+            <br><br>Pertinencia de la idea de negocio: el jabón lavaplatos Neusolv considera el caso de una de sus creadoras, es el caso de la estudiante Brittanny Mora de undécimo año, que desarrollo una enfermedad en su piel. “La dermatitis atópica (eccema) es una afección que hace que la piel se seque, pique y se inflame. Es común en los niños pequeños, pero puede manifestarse a cualquier edad. La dermatitis atópica es duradera (crónica) y suele empeorar periódicamente. Puede provocar irritación, pero no es contagiosa”. Brittanny, contrajo dermatitis atópica por la frecuente exposición ante productos químicos en los quehaceres de su hogar, por lo tanto, NeuSolv toma en cuenta los problemas del mercado para poder apoyar a más personas con problemas similares. (Mayoclinic, 2025, párr. 1).
+        </p>
+    </section>
+
+    <script>
+  let idioma = "es";
+
+  function cambiarIdiomaAnalisis() {
+    if (idioma === "es") {
+      document.getElementById("button").textContent = "Translate";
+      document.getElementById("inicio").textContent = "Home";
+      document.getElementById("proyecto1").textContent = "Project";
+      document.getElementById("modelo").textContent = "Business Model";
+      document.getElementById("productos").textContent = "Products";
+      document.getElementById("contactos").textContent = "Contact";
+      document.getElementById("titulo").textContent = "Analysis of the Social, Economic, Technological, and Environmental Context of the Product";
+      document.getElementById("descripcion").innerHTML = `On the social side, NeuSolv seeks to offer people a neutral dishwashing soap that is both useful in household chores and beneficial for health care. It ensures that consumers can access the product and take advantage of benefits such as greater safety in avoiding allergic reactions, reducing the risk of developing atopic skin conditions like dermatitis, or damaging utensils.
+        <br><br>Economically, it is a product that aims to benefit people by being a safer alternative for them and their loved ones.
+        <br><br>NeuSolv dishwashing soap seeks to be accessible to all economic classes, so everyone can enjoy its incredible advantages. Thanks to its formula made with low-cost products, NeuSolv is not an expensive product.
+        <br><br>On the environmental side, the product comes in recyclable packaging, making it a less polluting option. This eco-friendly packaging attracts consumers interested in sustainable practices and helps raise awareness about environmental care.
+        <br><br>"The environmental impact of pollution from chemical products can be significant, affecting air, water, and soil quality." For this reason, NeuSolv dishwashing soap seeks to maintain a formula that promotes environmental care by not containing harsh chemical components, helping to reduce much of the pollution generated by product waste. (Pérez, 2023, para. 2).
+        <br><br>NeuSolv has commercial advantages since the trend of caring for skin, health, and quality of life is increasing daily. Buyers realize how important it is to choose a good quality product—not only useful for household chores but also beneficial for skin care. NeuSolv is the ecological and healthy alternative to protect the skin in the kitchen.
+        <br><br>Day by day, the formula of NeuSolv dishwashing soap is being improved to provide better quality of life in homes, workplaces, and businesses. NeuSolv promises to be the dishwashing soap of the future, offering quality and safety to its consumers.
+        <br><br>Relevance of the business idea: NeuSolv considers the case of one of its creators, student Brittanny Mora, who developed a skin condition. "Atopic dermatitis (eczema) is a condition that makes the skin dry, itchy, and inflamed. It is common in young children but can occur at any age. It is long-lasting (chronic) and usually flares up periodically. It can cause irritation but is not contagious." Brittanny developed atopic dermatitis due to frequent exposure to chemical products during household chores. Therefore, NeuSolv takes into account market problems to support more people with similar issues. (Mayo Clinic, 2025, para. 1).`;
+
+      idioma = "en";
+    } else {
+      document.getElementById("button").textContent = "Traducir";
+      document.getElementById("inicio").textContent = "Inicio";
+      document.getElementById("proyecto1").textContent = "Proyecto";
+      document.getElementById("modelo").textContent = "Modelo de Negocios";
+      document.getElementById("productos").textContent = "Productos";
+      document.getElementById("contactos").textContent = "Contacto";
+      document.getElementById("titulo").textContent = "Análisis del contexto Social, Económico, Tecnológico y Medioambiental del producto";
+      document.getElementById("descripcion").innerHTML = `En la parte social, NeuSolv busca ofrecer a las personas un jabón lavaplatos neutro que sea tanto útil en las labores domésticas, como en el cuido de la salud, busca que los consumidores puedan acceder al producto y aprovechar de beneficios, como más seguridad de evitar reacciones alérgicas al usar el producto, a desarrollar enfermedades atópicas en la piel, como la dermatitis, o terminar dañando los utensilios 
+        <br><br>Por el lado económico podemos encontrar que es un producto que busca beneficiar a las personas y ser una alternativa más segura para ellos y para sus seres queridos. 
+        <br><br>El lavaplatos NeuSolv busca ser accesible a todo tipo de clase económica, para que todas las personas puedan aprovechar sus increíbles ventajas. Gracias a su fórmula generada con productos de bajo costo, el Jabón lavaplatos NeuSolv no termina siendo un producto de costo muy elevado.
+        <br><br>En el lado ambiental, el producto cuenta con un empacado de material reciclable, lo que lo hace una opción de producto menos contaminante para el medio ambiente. Este empaque transforma al jabón lavaplatos NeuSolv en un producto eco-amigable, capaz de atraer a consumidores interesados en prácticas sostenibles y aumentar las ventas gracias a su compromiso ecológico e incluso colabora a concientizar las practicas hacía el cuido y mejoramiento del planeta.
+        <br><br>“El impacto ambiental de la contaminación por productos químicos puede ser significativo, afectando la calidad del aire, el agua y el suelo.” Por esto el jabón lavaplatos NeuSolv busca mantener una fórmula que promueva el cuido del medio, al no contener componentes químicos agresivos, ayuda a reducir gran cantidad de la contaminación ambiental que se produce por desechos de productos, apoyando cada esfuerzo que como humanos consientes promueve para cuidar del mundo. (Pérez, 2023, párr. 2).<br><br>
+        <br><br>El jabón lavaplatos NeuSolv es un producto con ventaja comercial, ya que la tendencia del cuido de la piel, salud, calidad de vida y demás va aumentando todos los días, haciendo que los compradores se den cuenta de lo importante que es saber elegir un producto de buena calidad, ya que están haciendo un bien a sigo mismos,  por elegir un producto que no solo es útil en labores domésticas, también es muy bueno para cuidar la salud de su piel, evitando molestares al realizar la limpieza en su cocina. NeuSolv es la alternativa ecológica y saludable para implementar el cuido de la piel en la cocina.
+        <br><br>Día con día se trabaja en el mejoramiento de la formula del jabón lavaplatos NeuSolv, busca brindar una mejor calidad de vida en la cocina de sus hogares, trabajos emprendimientos y más. NeuSolv promete ser el jabón lavaplatos del futuro, brindando calidad y seguridad a sus consumidores.
+        <br><br>Pertinencia de la idea de negocio: el jabón lavaplatos Neusolv considera el caso de una de sus creadoras, es el caso de la estudiante Brittanny Mora de undécimo año, que desarrollo una enfermedad en su piel. “La dermatitis atópica (eccema) es una afección que hace que la piel se seque, pique y se inflame. Es común en los niños pequeños, pero puede manifestarse a cualquier edad. La dermatitis atópica es duradera (crónica) y suele empeorar periódicamente. Puede provocar irritación, pero no es contagiosa”. Brittanny, contrajo dermatitis atópica por la frecuente exposición ante productos químicos en los quehaceres de su hogar, por lo tanto, NeuSolv toma en cuenta los problemas del mercado para poder apoyar a más personas con problemas similares. (Mayoclinic, 2025, párr. 1).`;
+
+      idioma = "es";
+    }
+  }
+</script>
+
+</body>
+</html>
