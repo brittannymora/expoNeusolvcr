@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NeuSolv | Contacto</title>
+    <link rel="icon" type="image/png" href="../imagen/favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header class="header-principal">
+        <img src="../imagen/logo.jpg" alt="" class="logo" />
+        <nav class="menu">
+        <a href="index.html" id="inicio">Inicio</a>
+        <div class="dropdown">
+            <a href="#" id="proyecto1">Proyecto</a>
+            <div class="submenu">
+            <a href="justificacion.html" id="justificacion">Justificación</a>
+            <a href="analisis.html" id="analisis">Análisis</a>
+            <a href="modelo.html" id="titulo">Modelo de Negocios</a>
+            </div>
+      </div>
+      <a href="servicios.html" id="productos">Productos</a>
+      <a href="contacto.html" id="contactos">Contacto</a>
+      <!-- cambiar de idioma -->
+      <a><button onclick="cambiarIdioma()" id="button" class="bot">Traducir</button></a>
+    </nav>
+    </header>
+
+    <!-- enlaces para imagenes y poder acceder a las redes de comunicacion -->
+    <section class="contenido">
+        <div class="caja flotante sombra" style="font-size: 20px;"> WhatsApp  
+            <a href="https://wa.me/50687401274" target="_blank">
+                <img src="../imagen/whatsappp.png" alt="WhatsApp" style="width: 20px; height: 20px; ;"> 
+            </a>
+        </div>
+        <div class="caja flotante sombra" style="font-size: 20px;"> Instagram  
+            <a href="https://www.instagram.com/neusolvcr/" target="_blank">
+                <img src="../imagen/instagramm.png" alt="Instagram" style="width: 20px; height: 20px;">
+            </a>
+        </div>
+    </section>
+
+    <script>
+        let idioma = "es";
+
+    function cambiarIdioma() {
+      if (idioma === "es") {
+        document.getElementById("button").textContent = "Translate";
+        document.getElementById("inicio").textContent = "Home";
+        document.getElementById("proyecto1").textContent = "Proyect";
+        document.getElementById("titulo").textContent = "Business model";
+        document.getElementById("productos").textContent = "Products";
+        document.getElementById("contactos").textContent = "Contacts";
+        document.getElementById("analisis").textContent = "Analysis";
+        document.getElementById("justificacion").textContent = "Justification";
+
+        idioma = "en";
+      } else {
+        document.getElementById("button").textContent = "Traducir";
+        document.getElementById("inicio").textContent = "Inicio";
+        document.getElementById("proyecto1").textContent = "Proyecto"
+        document.getElementById("titulo").textContent = "Modelo de negocios";
+        document.getElementById("productos").textContent = "Products"
+        document.getElementById("contactos").textContent = "Contactos";
+        document.getElementById("analisis").textContent = "Analysis";
+        document.getElementById("justificacion").textContent = "Justificacion";
+        idioma = "es";
+      }
+    }
+    </script>
+</body>
+</html>
